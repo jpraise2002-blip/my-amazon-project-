@@ -1,7 +1,12 @@
+import dayjs from 'https://unpkg.com/supersimpledev@8.5.0/dayjs/esm/index.js';
+
 let trackingHTML = '';
 
+const deliveryDate = dayjs().add(7, 'day').format('dddd, MMMM D');
+
 const tracking = [{
-    arrival: 'Monday, June 13',
+    // arrival: 'Monday, June 13',
+    arrival: deliveryDate,
     name: 'Black and Gray Athletic Cotton Socks - 6 Pairs',
     quantity: '1',
     image: 'images/products/athletic-cotton-socks-6-pairs.jpg',
